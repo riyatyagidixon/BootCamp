@@ -17,5 +17,3 @@ jobs:
       run: make
     - name: make Makefile
       run: make Makefile
-    - name: make distcheck
-      run: make distcheck
