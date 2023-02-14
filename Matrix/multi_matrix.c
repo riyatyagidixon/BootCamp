@@ -13,7 +13,14 @@ int main()
     scanf("%d", &row2);
     printf("Enter the no. of columns for second matrix:\n");
     scanf("%d", &col2);
-    int a[row1][col1],  b[row2][col2],product[row1][col2], sum=0, i , j, pro=0;
+    //int a[row1][col1],  b[row2][col2],product[row1][col2], sum=0, pro=0;
+    //int a[row1][col1];
+    int b[row2][col2];
+    //int product[row1][col2];
+     
+    /*if( col1==row2 && row1>0 && row2>0 && col1>0 && col2>0){
+    //int a[row1][col1],  b[row2][col2],product[row1][col2], sum=0, pro=0;
+        
     printf("Enter elements of first matrix a : \n");
     for(int i=0; i<row1 ;i++)
         {
@@ -55,6 +62,11 @@ int main()
                   } 
        printf("\n");
           }
+    }
+    else
+    {
+        printf("Multiplication cannot be done \n");
+    }*/
     return 0;
   }
 

@@ -14,10 +14,12 @@ int sub(int, int);
 float div(int, int);
 
 int main()
+    
 {
+    
     int first, second, con, result;
-
-    printf("Hello World\n");
+    do{
+    printf("\n Hello World\n");
     
     printf("Enter first number :\n");
     scanf("%d", &first);
@@ -26,21 +28,23 @@ int main()
 
     printf("Press 1 for addition \nPress 2 for subtraction\n");
     printf("Press 3 for multiplication \nPress 4 for division\n");
+
+    printf(" press 0 for exit"/n);
     scanf("%d", &con);
 
-/*    if(con==ADD)
+    if(con==ADD)
     {
         result = sum(first , second);
         printf("sum of numbers = %d", result);
             
-    } */
+    } 
     if(con == SUB)
     {
         result = sub(first , second);
         printf("subtraction of numbers = %d" , result);
            
     }
-/*    else if(con == MUL)
+   else if(con == MUL)
     {
         result = multi(first , second);
         printf("Multiplication of numbers = %d" , result);
@@ -58,14 +62,21 @@ int main()
             printf("Division of numbers = %f\n", division);
         }
            
-    }*/
+    }
     else
     {
         printf("Enter a valid number\n");
     }
+    }
+    while(con!=0);
     
     return 0;
+
+
+
+
 }
+
 
 
 
